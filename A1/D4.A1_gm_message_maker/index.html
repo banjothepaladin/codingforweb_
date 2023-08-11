@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+
+    <meta charset="utf-8">
+    
+    <!-- Insert relevant content inside the following meta tags-->
+    <meta name="author" content="Author Name">
+    <meta name="description" content="This is a Good Morning Message Maker">
+    <meta property="og:title" content="Good Morning Message Maker"/>
+    <meta property="og:description" content="This is a Good Morning Message Maker"/>
+    
+    <title>Good Morning Message Maker</title>
+    
+    <!-- No need to edit this-->
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website"/>
+
+    <!-- Links to boilerplate CSS and JS files -- DO NOT CHANGE or EDIT THESE!!! -->
+    <link href="./template-files/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./template-files/script.js" defer></script> 
+    <script type="text/javascript" src="./template-files/html2canvas.js" defer></script> 
+
+
+
+    <!-- Links to YOUR CSS and JS files -->
+    <link href="./style-to-edit.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./script-to-edit.js" defer></script>
+
+</head>
+    
+<body>
+
+    <header>        
+        
+        <!--DO NOT EDIT THIS -->
+        <button id="openPopup" onclick="showPopup()"> ? </button>
+        
+        <!--Insert your Names after the dash -->
+        <h1>'Good Morning Message Maker' – Aditya Narayan</h1>
+    
+    </header>
+    <main>
+
+        <section id="input">
+        <!-- Markup for your inputs and controls go inside this section -->
+        <label for="dropdown">choose image</label>
+        <br>
+        <select name="dropdownmenu" id="imgchoice" onchange="chooseimage()">
+            <option value="">select and option</option>
+            <option value="./images/K1.jpg">image1</option>
+            <option value="./images/K2.jpg">image2</option>
+            <option value="./images/K3.jpg">image3</option>
+            <option value="https://media.tenor.com/xCc58fEqFREAAAAd/nerd-nerdy.gif">image4</option>
+            <option value="https://media.tenor.com/9RBYPqpnSeUAAAAC/crying-emoji.gif">image5</option>
+            
+        </select>
+
+            <br><br>
+
+            <label for="toptextinput">top text</label>
+            <br>
+            <input type="text" id="textinput" oninput="outputtext()">
+            
+            <br><br>
+
+
+            <label for="bottomtextinput">bottom text</label>
+            <br>
+            <input type="text" id="textinput2" oninput="outputtext2()">
+            
+            <br><br>
+
+            <label for="fontchanger">Change font</label>
+            <br>
+            <input type="radio" id="font1" name="fontoption" value="cursive" oninput="fontchoice1()">
+            <label for="cursive">cursive</label>
+
+            <input type="radio" id="font2" name="fontoption" value="serif" oninput="fontchoice2()">
+            <label for="serif">serif</label>
+
+            <input type="radio" id="font3" name="fontoption" value="sans-serif" oninput="fontchoice3()">
+            <label for="sans-serif">sans-serif</label>
+
+
+            <br><br>
+
+
+
+            <label for="dropdown">choose color for top</label>
+            <br>
+            <select name="dropdownmenucolor" id="colorchoice" onchange="choosecolor()">
+            <option value="">select and option</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+            <option value="brown">brown</option>
+            <option value="yellow">yellow</option>
+            <option value="bisque">bisque</option>
+            <option value="purple">purple</option>
+            <option value="white">white</option>
+            <option value="black">black</option>
+            </select>
+
+            <br><br>
+
+
+
+            <label for="dropdown2">choose color for bottom</label>
+            <select name="dropdownmenucolor2" id="colorchoice2" onchange="choosecolor2()">
+            <option value="">select and option</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+            <option value="brown">brown</option>
+            <option value="yellow">yellow</option>
+            <option value="bisque">bisque</option>
+            <option value="purple">purple</option>
+            <option value="white">white</option>
+            <option value="black">black</option>
+            </select>
+
+            <br><br>
+
+
+
+            <label for="fontsizertop">Change font size top</label>
+            <input type="range" id="fontssize" name="boxslider" min="10" max="100" oninput="adjustfontsize()">
+
+            <br><br>
+
+            <label for="fontsizertop">Change font size bottom</label>
+            <input type="range" id="fontssize2" name="boxslider2" min="10" max="100" oninput="adjustfontsize2()">
+            
+            <br><br>
+            <label for="strokesizer">Change stroke size</label>
+            <input type="number" id="stroker" name="textstroker" oninput="adjuststroke()">
+
+            <br><br>
+
+
+        </select>
+
+
+
+        </section>
+
+        <!-- Button to Save Image | DO NOT EDIT THIS -->
+        <button id="save-img">Save Image</button>
+
+        <section id="output">
+            
+            <div id="output-canvas">
+                <p id="text-1"></p>
+                <p id="text-2"></p>
+
+                <img src="" id="imah">
+                
+                <!-- Markup for your image and texts go inside this div -->
+                <!-- Use the ID "text-1" for Text 1 -->
+                <!-- Use the ID "text-2" for Text 2 -->          
+            </div>
+
+        </section>
+    
+    </main>
+    
+    <!--DO NOT EDIT THIS DIV -->
+    <div id="popupCover" onclick="hidePopup()"></div>
+
+    <!-- 
+        Once you are done with your assignment, replace the instructions text inside the div with id "popup" with the following text: This tool was programmed by [insert names], as part of a unit titled 'Coding for the Web', facilitated during the 2023/24 odd semester at Srishti Manipal Institute. 
+    -->
+    <div id="popup">
+
+        This page was made by Aditya Narayan And Sumedha Nair, as part of a unit titled 'Coding for the Web', facilitated during the 2023/24 odd semester at Srishti Manipal Institute.
+
+    </div>
+
+
+
+
+
+
+
+    <div></div>
+
+</body>    
+</html> 

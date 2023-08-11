@@ -1,0 +1,25 @@
+/* Your CSS goes here --------------------- */
+
+#output-canvas{
+    width: 400px;
+    height: 400px;
+}
+
+#IMAH{
+    max-width: 400px;
+    height: 400px;
+}
+
+#output{
+    background-color: antiquewhite;
+    background-image: url(https://media.tenor.com/WDSjkCTt7eEAAAAC/doggoflowersgirl-pixel.gif);
+    /*credits : https://tenor.com/view/doggoflowersgirl-pixel-pixel-art-cute-gif-22950568*/
+    background-size: cover;
+}
+
+#input{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(https://media.tenor.com/0xVGBd3MmZsAAAAC/pixel-city.gif);
+    /*credits : https://tenor.com/view/pixel-city-gif-25982590*/
+    background-size: cover;
+}
