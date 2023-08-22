@@ -1,0 +1,50 @@
+- Document
+  - <!DOCTYPE html>
+  - <html lang="en-GB">
+    - <head>
+      - <meta charset="utf-8">
+      - <meta name="author" content="learn.expandedmetrics.com">
+      - <meta name="description" content=" ">
+      - <meta name="keywords" content=" ">
+      - <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      - <title>Aditya Narayan & Anurag Shin</title>
+      - <!-- Socials -->
+        - <meta property="og:title" content=" " />
+        - <meta property="og:type" content="website" />
+        - <meta property="og:description" content=" " />
+        - <meta property="og:image" content=" " />
+        - <meta property="og:url" content=" .com" />
+        - <meta name="twitter:title" content=" ">
+        - <meta name="twitter:description" content=" ">
+        - <meta name="twitter:image" content="assets/ .jpg">
+        - <meta name="twitter:card" content="assets/ .jpg">
+      - <!-- CSS -->
+      - <link href="styler.css" rel="stylesheet" type="text/css">
+      - <!-- JavaScript -->
+      - <script type="text/javascript" src="scripter.js" defer></script>
+      - <!-- Favicons -->
+      - <link rel="shortcut icon" href="assets/favicon.ico">
+    - </head>
+    - <body bgcolor="black">
+      - <div id="header">
+        - <div class="label">
+          - <img src="./img_scan/label2.png" alt="label">
+        - </div>
+        - <h1>UNIVERSAL CREATION</h1>
+        - <div class="ecno">
+          - <img src="./img_scan/ecno2.png" alt="ecno">
+        - </div>
+      - </div>
+      - <div class="grid">
+        - <div class="col">
+          - <img src="./img_scan/earth.png" alt="">
+          - <div class="dharti">
+            - <h3>EARTH</h3>
+            - <h3>धरती</h3>
+          - </div>
+          - <p>Earth is the only planet in the solar system to have water...</p>
+        - </div>
+        - <!-- Other similar "col" divs -->
+      - </div>
+    - </body>
+  - </html>
