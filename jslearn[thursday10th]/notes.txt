@@ -1,0 +1,4 @@
+event handlers handle / command when to use functions in js
+.innerhtml appends the content of the tag
+
+visibility is a style option - visibility.hidden/visible

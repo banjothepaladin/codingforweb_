@@ -1,0 +1,28 @@
+a:active{
+    color: red;
+}
+
+button:hover{
+    color: blue;
+}
+
+#box {
+    width: 400px;
+    height: 400px;
+    background-color: green;
+}
+
+.image-container {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CSS for the image itself */
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
