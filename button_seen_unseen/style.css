@@ -1,0 +1,32 @@
+#div1,
+#div2 {
+    background-color: #bb1d1d;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    display: none;
+    /* Initially hide divs */
+}
+
+/* CSS styles for buttons */
+#button1{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#button2{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#button3 {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
