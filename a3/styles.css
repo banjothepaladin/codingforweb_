@@ -177,7 +177,32 @@ body {
     
   }
 
-  
+  @media screen and (max-width: 750px) {
+    #p1 {
+        top: 10vh;
+        left: 45vw;
+    }
+    
+    #p2 {
+        top: 40vh;
+        left: 35vw;
+    }
+    
+    #p3 {
+        top: 70vh;
+        left: 55vw;
+    }
+    
+    .image{
+        width:100px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .desc{
+        display: none;
+    }
+}
 
 
 /* ... (your existing CSS styles) ... */
