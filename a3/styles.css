@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling when zoomed */
+    background-image: url('./bgbg.gif'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center center;
+    color: #fff;
+}
+
+
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 150px; /* Set the width as desired */
+    height: auto;
+    position: absolute;
+}
+
+/* Position the images */
+#p1 {
+    top: 39vh;
+    left: 18vw;
+}
+
+#p2 {
+    top: 24vh;
+    left: 40vw;
+}
+
+#p3 {
+    top: 38vh;
+    left: 75vw;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    background: rgba(143, 138, 138, 0.252);
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 10px);
+    height:fit-content;
+    width: 25vw;
+    display:none;
+    align-items: center;
+    transition: left 0.3s ease;
+    
+    float: left;
+    text-align: justify;
+    font-size: 0.8vw;
+    font-family: 'bodytxt';
+}
+
+.text > h1{
+    font-family: 'title';
+    font-size: 1vw;
+}
+
+
+.button-container {
+    margin-top: 10px;
+    
+    
+}
+
+.redirect-button {
+    background-color: rgb(192, 192, 191); /* Make the button golden */
+    color: black; /* Make the text in the button black */
+        display: block; /* Ensure the button is a block-level element (starts on a new line) */
+    
+    align-self:flex-end;
+    border-radius: 10px;
+    font-family: 'bodytxt';
+    font-size: 1vw;
+}
+
+.container.enlarged {
+    transform: scale(1.1);
+    background-image: url('./zooms.gif'); /* Change the background image */
+    background-size: cover; /* Adjust background properties as needed */
+}
+
+.container.enlarged .image {
+    transform: scale(1.2);
+    opacity: 0;
+}
+
+.container.enlarged .image.enlarged {
+    opacity: 1;
+}
+
+.container.enlarged .image.enlarged .text {
+    left: calc(100% + 55px);
+    transform: scale(1.2);
+    /* background-color: rgba(160, 159, 159, 0.223);
+    border-radius: 1vw; */
+    display:flex;
+    flex-direction: column;
+    width: 35vw;
+}
+
+.modelman{
+    width: 10vw;
+}
+
+
+
+@font-face {
+    font-family: 'title';
+    src: url(./assets/Leky\ Calgria.otf);
+}
+@font-face {
+    font-family: 'bodytxt';
+    src: url(./assets/Cascadia.ttf);
+}
+
+
+
+.title{
+    font-family: 'title';
+    font-size: 3vw;
+    top: -0.5vw;
+    left: 1vw;
+    position: fixed; /* Position the title as a fixed element */
+    z-index: 2;
+}
+
+
+.desc {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    font-family: 'bodytxt';
+    color: #ffffff;
+    background-color: rgba(92, 92, 92, 0.492);
+    width: 50%;
+    box-sizing: border-box;
+}
+
+
+
+.dot {
+    height: 30vw;
+    width: 30vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    top: -14vw;
+    left: -10vw;
+    display: inline-block;
+    position: fixed; /* Position the dot as a fixed element */
+    z-index: 2;
+    
+  }
+
+  
+
+
+/* ... (your existing CSS styles) ... */
+/* .navbars{
+    width: 5vw;
+    height: 100vh;
+    position: fixed;
+    background-color: aqua;
+}
+
+.navbarnav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navitems{
+    width: auto;
+}
+
+.navitems:last-child{
+    margin-top: auto;
+}
+
+.navlink{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: aquamarine;
+    text-decoration: none;
+}
+
+.navlink svg {
+    min-width: 2vw;
+    margin: 0 1vw;
+}
+
+.navbars:hover{
+    width: 20vw;
+    z-index: 4;
+} */
